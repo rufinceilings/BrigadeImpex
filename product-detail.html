@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details | Brigade Impex</title>
+    <meta name="description" content="Product details page for false ceiling and drywall accessories from Brigade Impex.">
+    <meta name="keywords" content="false ceiling, drywall, gypsum board, ceiling section, perimeter, anchor fastener">
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Icon Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: #f8f9fa;
+        }
+
+        .product-hero {
+            background: linear-gradient(135deg, #1f1f1f, #3a3a3c);
+            box-shadow: inset 0 -5px 20px rgba(0,0,0,0.3);
+        }
+
+        .product-img-wrap {
+            background: #fff;
+            border-radius: 18px;
+            padding: 18px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+        }
+
+        .product-img {
+            width: 100%;
+            max-height: 520px;
+            object-fit: contain;
+            display: block;
+        }
+
+        .info-card {
+            border: 0;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+        }
+
+        .badge-soft {
+            background: rgba(13, 110, 253, 0.1);
+            color: #0d6efd;
+            border: 1px solid rgba(13, 110, 253, 0.15);
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(13, 110, 253, 0.1);
+            color: #0d6efd;
+            flex: 0 0 auto;
+        }
+
+        .section-title h1 {
+            letter-spacing: -0.02em;
+        }
+
+        .mini-card {
+            border: 0;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+            transition: 0.25s ease;
+        }
+
+            .mini-card:hover {
+                transform: translateY(-4px);
+            }
+
+        .product-list-link {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 shadow-sm">
+        <a href="index.html" class="navbar-brand d-flex align-items-center ps-2 pe-4 pe-lg-5">
+            <img src="img/rufin.png" alt="Brigade Impex Logo" style="height: 65px;" class="img-fluid">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="index.html#about" class="nav-item nav-link">About</a>
+                <a href="index.html#services" class="nav-item nav-link">Products</a>
+                <a href="index.html#contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Page Header Start -->
+    <div class="container-fluid product-hero py-5 mb-5">
+        <div class="container py-5">
+            <h1 id="pageHeading" class="display-4 text-white mb-3 animated slideInDown">Product Details</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="index.html#services">Products</a></li>
+                    <li id="breadcrumbItem" class="breadcrumb-item text-white active" aria-current="page">Details</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+    <!-- Product Detail Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="product-img-wrap">
+                        <img id="productImage" src="" alt="Product Image" class="product-img">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                    <span class="badge badge-soft rounded-pill px-3 py-2 mb-3" id="productCategory">Premium Product</span>
+                    <h2 id="productTitle" class="display-6 fw-bold mb-3">Product Title</h2>
+                    <p id="productDescription" class="text-muted fs-6 mb-4">
+                        Product description will appear here.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+                        <a href="#contact" class="btn btn-primary px-4 py-3">
+                            <i class="fa fa-envelope me-2"></i>Enquire Now
+                        </a>
+                        <a href="index.html#services" class="btn btn-outline-secondary px-4 py-3">
+                            <i class="fa fa-th-large me-2"></i>View All Products
+                        </a>
+                    </div>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <div class="info-card bg-white p-3 h-100">
+                                <div class="d-flex align-items-start">
+                                    <div class="feature-icon me-3">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1 fw-bold">Quality Finish</h6>
+                                        <small class="text-muted">Made for clean, precise installation.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="info-card bg-white p-3 h-100">
+                                <div class="d-flex align-items-start">
+                                    <div class="feature-icon me-3">
+                                        <i class="fa fa-tools"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1 fw-bold">Easy Installation</h6>
+                                        <small class="text-muted">Designed for fast and reliable fitting.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="info-card bg-white p-3 h-100">
+                                <div class="d-flex align-items-start">
+                                    <div class="feature-icon me-3">
+                                        <i class="fa fa-shield-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1 fw-bold">Durable</h6>
+                                        <small class="text-muted">Strong performance for long-term use.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="info-card bg-white p-3 h-100">
+                                <div class="d-flex align-items-start">
+                                    <div class="feature-icon me-3">
+                                        <i class="fa fa-industry"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1 fw-bold">Project Ready</h6>
+                                        <small class="text-muted">Suitable for commercial and residential work.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card bg-white p-4">
+                        <h5 class="fw-bold mb-3">Product Highlights</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><i class="fa fa-angle-right text-primary me-2"></i>Reliable product information for your project planning.</li>
+                            <li class="mb-2"><i class="fa fa-angle-right text-primary me-2"></i>Clean, modern, and professional presentation.</li>
+                            <li class="mb-0"><i class="fa fa-angle-right text-primary me-2"></i>Easy to connect with your enquiry or WhatsApp lead flow.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product Detail End -->
+    <!-- Related Products Start -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h1 class="display-6 mb-3">Related Products</h1>
+                <p class="text-muted mb-0">Explore more ceiling and drywall accessories.</p>
+            </div>
+
+            <div id="relatedProducts" class="row g-4"></div>
+        </div>
+    </div>
+    <!-- Related Products End -->
+    <!-- Contact Start -->
+    <div id="contact" class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 6rem 0;">
+            <div class="container contact px-lg-0">
+                <div class="row g-0 mx-lg-0">
+                    <div class="col-lg-6 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="p-lg-5 ps-lg-0">
+                            <div class="section-title text-start">
+                                <h1 class="display-5 mb-4">Contact Us</h1>
+                            </div>
+                            <p class="mb-4">
+                                At Brigade Impex, we make the first step easy. Share your product requirement, project size, and location, and we will get back with a clear and practical quotation.
+                            </p>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a message here" name="message" id="message" style="height: 110px"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row g-2">
+                                            <div class="col-12 col-md-6">
+                                                <button class="btn btn-primary w-100 py-3" type="submit" id="btnSendMessage">
+                                                    Send Message
+                                                </button>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <button class="btn btn-success w-100 py-3" type="button" id="btnWhatsApp"
+                                                        data-whatsapp-number="918668145793" aria-label="Chat on Whatsapp">
+                                                    Chat on WhatsApp
+                                                </button>
+                                                <a id="waFallbackLink" class="d-none mt-2 small text-center d-block"
+                                                   href="https://wa.me/918668145793?text=Hello%20Bharat%20Gypsum%20Group"
+                                                   target="_blank" rel="noopener noreferrer">Open WhatsApp</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <iframe class="position-absolute w-100 h-100"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3884.504909705511!2d80.2341342!3d13.193586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a527be7cc8653eb%3A0xd022dfed7d6fcd3d!2sBrigade%20Impex!5e0!3m2!1sen!2sin!4v1773901309354!5m2!1sen!2sin"
+                                    style="object-fit: cover;" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <div class="modal fade" id="waModal" tabindex="-1" aria-labelledby="waModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-3">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="waModalLabel">Who do you want to chat with?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="d-grid gap-2">
+
+                        <button class="btn btn-outline-primary select-person"
+                                data-number="919884237916"
+                                data-name="there">
+                            Support Team
+                        </button>
+
+                        <button class="btn btn-outline-success select-person"
+                                data-number="919841158678"
+                                data-name="there">
+                            Sales Team
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start-->
+    <footer class="container-fluid footer mt-3 pt-4" role="contentinfo">
+        <div class="container py-3">
+            <!-- Top center: contact -->
+            <div class="row justify-content-center text-center">
+                <div class="col-12 col-md-8">
+                    <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 mb-2 contact-row">
+                        <div class="d-flex align-items-center contact-item">
+                            <i class="fa fa-map-marker-alt me-2" aria-hidden="true"></i>
+                            <a href="https://maps.app.goo.gl/yhzugA3BZ5pD5TK7A"
+                               target="_blank"
+                               class="text-light text-decoration-none">
+                                <address class="mb-0">Madhavaram, Chennai, Tamil Nadu 600060</address>
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center contact-item">
+                            <i class="fa fa-phone-alt me-2" aria-hidden="true"></i>
+                            <!-- keep phone on one line with .no-wrap -->
+                            <a href="tel:+919884237916" class="text-light text-decoration-none no-wrap">+91&nbsp;98842&nbsp;37916</a>
+                        </div>
+                        <div class="d-flex align-items-center contact-item">
+                            <i class="fa fa-phone-alt me-2" aria-hidden="true"></i>
+                            <!-- keep phone on one line with .no-wrap -->
+                            <a href="tel:+919841158678" class="text-light text-decoration-none no-wrap">+91&nbsp;98411&nbsp;58678</a>
+                        </div>
+
+                        <div class="d-flex align-items-center contact-item">
+                            <i class="fa fa-envelope me-2" aria-hidden="true"></i>
+                            <!-- also prevent the email from awkward breaking -->
+                            <a href="mailto:rufinceilings@outlook.com" class="text-light text-decoration-none no-wrap">rufinceilings@outlook.com</a>
+                        </div>
+                    </div>
+
+                    <p class="mb-2 small footer-desc">
+                        We transform raw rooms into smart, lasting interiors. From false ceilings to insulation, we use durable materials and strict safety standards so your space looks great and performs well.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Optional bottom row: copyright/social -->
+            <div class="row mt-3">
+                <div class="col-12 text-center small">
+                    &copy; <span id="currentYear"></span> Brigade Impex Group — All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        const products = {
+            "ceiling-section": {
+                title: "CEILING SECTION",
+                image: "img/Product-1.png",
+                description: "Ceiling section is used as the main structural component in false ceiling systems. It provides strength, alignment, and support for the overall ceiling framework.",
+                category: "Ceiling System",
+                related: ["intermediate", "perimeter", "ceiling-angle"]
+            },
+            "intermediate": {
+                title: "INTERMEDIATE",
+                image: "img/Product-2.png",
+                description: "Intermediate section is used between the main framing members to create a strong and balanced ceiling structure with proper load distribution.",
+                category: "Ceiling System",
+                related: ["ceiling-section", "perimeter", "connecting-clip"]
+            },
+            "perimeter": {
+                title: "PERIMETER",
+                image: "img/Product-3.png",
+                description: "Perimeter section is fixed around the edge of the ceiling to support the framework and ensure a neat, finished boundary.",
+                category: "Ceiling System",
+                related: ["ceiling-section", "ceiling-angle", "shadowline-bead"]
+            },
+            "ceiling-angle": {
+                title: "CEILING ANGLE",
+                image: "img/Product-4.png",
+                description: "Ceiling angle is used to create edge support and maintain the correct alignment of false ceiling components along the perimeter.",
+                category: "Ceiling System",
+                related: ["perimeter", "ceiling-section", "soffit-cleat"]
+            },
+            "gypsum-board": {
+                title: "GYPSUM BOARD",
+                image: "img/Product-5.png",
+                description: "Gypsum board is a core material used for false ceilings and partitions. It offers a smooth finish, clean look, and easy installation.",
+                category: "Board Material",
+                related: ["drywall-screw", "drywall-tape", "gyproc-pro-fill"]
+            },
+            "drywall-screw": {
+                title: "DRYWALL SCREW",
+                image: "img/Product-6.png",
+                description: "Drywall screws are specially designed for fixing gypsum boards securely to metal framing members with strong holding power.",
+                category: "Fixing Accessory",
+                related: ["gypsum-board", "drywall-tape", "anchor-fastener"]
+            },
+            "drywall-tape": {
+                title: "DRYWALL TAPE",
+                image: "img/Product-7.png",
+                description: "Drywall tape is used for reinforcing joints between boards and helps create a smooth, crack-resistant finish.",
+                category: "Finishing Material",
+                related: ["gypsum-board", "gyproc-pro-fill", "drywall-screw"]
+            },
+            "anchor-fastener": {
+                title: "ANCHOR FASTENER",
+                image: "img/Product-8.png",
+                description: "Anchor fastener is used for secure fixing into concrete or masonry surfaces, giving strong support for ceiling and drywall systems.",
+                category: "Fixing Accessory",
+                related: ["connecting-clip", "soffit-cleat", "ceiling-angle"]
+            },
+            "connecting-clip": {
+                title: "CONNECTING CLIP",
+                image: "img/Product-9.png",
+                description: "Connecting clip is used to join structural sections together, improving stability and making ceiling installation more reliable.",
+                category: "Ceiling System",
+                related: ["intermediate", "anchor-fastener", "ceiling-section"]
+            },
+            "shadowline-bead": {
+                title: "SHADOWLINE BEAD",
+                image: "img/Product-10.png",
+                description: "Shadowline bead creates a modern recessed edge detail, giving a stylish shadow finish at the perimeter of the ceiling.",
+                category: "Decorative Profile",
+                related: ["perimeter", "ceiling-angle", "soffit-cleat"]
+            },
+            "soffit-cleat": {
+                title: "SOFFIT CLEAT",
+                image: "img/Product-11.png",
+                description: "Soffit cleat is used to support soffit and edge details in ceiling systems, helping achieve a clean and secure installation.",
+                category: "Support Accessory",
+                related: ["shadowline-bead", "ceiling-angle", "anchor-fastener"]
+            },
+            "gyproc-pro-fill": {
+                title: "GYPROC PRO-FILL",
+                image: "img/Product-12.png",
+                description: "Gyproc Pro-Fill is a joint finishing material used for filling board joints and creating a smooth, professional surface finish.",
+                category: "Finishing Material",
+                related: ["drywall-tape", "gypsum-board", "drywall-screw"]
+            }
+        };
+
+        const productOrder = [
+            "ceiling-section",
+            "intermediate",
+            "perimeter",
+            "ceiling-angle",
+            "gypsum-board",
+            "drywall-screw",
+            "drywall-tape",
+            "anchor-fastener",
+            "connecting-clip",
+            "shadowline-bead",
+            "soffit-cleat",
+            "gyproc-pro-fill"
+        ];
+
+        function titleCaseFromId(id) {
+            return id.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+        }
+
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get("id");
+        const product = products[id] || {
+            title: "Product Not Found",
+            image: "img/Product-1.png",
+            description: "The requested product details are not available.",
+            category: "Unknown",
+            related: ["ceiling-section", "gypsum-board", "drywall-screw"]
+        };
+
+        document.title = `${product.title} | Brigade Impex`;
+        document.getElementById("pageHeading").textContent = product.title;
+        document.getElementById("breadcrumbItem").textContent = product.title;
+        document.getElementById("productTitle").textContent = product.title;
+        document.getElementById("productImage").src = product.image;
+        document.getElementById("productImage").alt = product.title;
+        document.getElementById("productDescription").textContent = product.description;
+        document.getElementById("productCategory").textContent = product.category;
+
+        const relatedWrap = document.getElementById("relatedProducts");
+        const relatedIds = (product.related || []).filter(item => products[item]);
+
+        relatedWrap.innerHTML = relatedIds.map(item => {
+            const p = products[item];
+            return `
+                                <div class="col-md-6 col-lg-4">
+                                    <a class="product-list-link" href="product-detail.html?id=${item}">
+                                        <div class="mini-card bg-white p-3 h-100">
+                                            <div class="text-center mb-3">
+                                                <img src="${p.image}" alt="${p.title}" class="img-fluid" style="max-height: 180px; object-fit: contain;">
+                                            </div>
+                                            <h5 class="fw-bold mb-1 text-dark">${p.title}</h5>
+                                            <small class="text-muted">${p.category}</small>
+                                        </div>
+                                    </a>
+                                </div>
+                            `;
+        }).join('');
+
+        if (!relatedWrap.innerHTML.trim()) {
+            relatedWrap.innerHTML = productOrder.slice(0, 3).map(item => {
+                const p = products[item];
+                return `
+                                    <div class="col-md-6 col-lg-4">
+                                        <a class="product-list-link" href="product-detail.html?id=${item}">
+                                            <div class="mini-card bg-white p-3 h-100">
+                                                <div class="text-center mb-3">
+                                                    <img src="${p.image}" alt="${p.title}" class="img-fluid" style="max-height: 180px; object-fit: contain;">
+                                                </div>
+                                                <h5 class="fw-bold mb-1 text-dark">${p.title}</h5>
+                                                <small class="text-muted">${p.category}</small>
+                                            </div>
+                                        </a>
+                                    </div>
+                                `;
+            }).join('');
+        }
+
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Hide spinner once page is ready
+        window.addEventListener('load', function () {
+            const spinner = document.getElementById('spinner');
+            if (spinner) spinner.classList.remove('show');
+        });
+    </script>
+
+    <script>
+        document.getElementById('btnSendMessage').addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const btn = this;
+            btn.innerText = "Sending...";
+            btn.disabled = true;
+
+            const formData = new FormData();
+            formData.append('name', document.getElementById('name').value);
+            formData.append('email', document.getElementById('email').value);
+            formData.append('subject', document.getElementById('subject').value);
+            formData.append('message', document.getElementById('message').value);
+
+            fetch('https://script.google.com/macros/s/AKfycbzomI677OD7yl_giRn0rsUHmW3UfG3MTt3B_YtM3wa7_BNHDeo9L5WAto37iqa_yo1d/exec', {
+                method: 'POST',
+                body: new URLSearchParams(formData)
+            })
+                .then(res => res.text())
+                .then(data => {
+                    if (data === "Success") {
+                        alert("Message sent successfully!");
+                        btn.innerText = "Sent!";
+                    } else {
+                        alert("Error sending message.");
+                        btn.innerText = "Send Message";
+                        btn.disabled = false;
+                    }
+                })
+                .catch(err => {
+                    console.error(err);
+                    alert("An error occurred.");
+                    btn.disabled = false;
+                    btn.innerText = "Send Message";
+                });
+        });
+    </script>
+
+    <script>
+        (function () {
+            const btn = document.getElementById('btnWhatsApp');
+
+            if (!btn) return;
+
+            // Open modal instead of direct WhatsApp
+            btn.addEventListener('click', function () {
+                const modal = new bootstrap.Modal(document.getElementById('waModal'));
+                modal.show();
+            });
+
+            // When user selects person
+            document.querySelectorAll('.select-person').forEach(button => {
+                button.addEventListener('click', function () {
+
+                    const phone = this.getAttribute('data-number');
+                    const person = this.getAttribute('data-name');
+
+                    const name = document.getElementById('name')?.value.trim() || '';
+                    const email = document.getElementById('email')?.value.trim() || '';
+                    const subject = document.getElementById('subject')?.value.trim() || '';
+                    const message = document.getElementById('message')?.value.trim() || '';
+
+                    let finalMessage = '';
+
+                    if (!message) {
+                        finalMessage = `Hi ${person}, I visited your website and I'm interested in your services.`;
+                    } else {
+                        const lines = [];
+
+                        if (name) lines.push("Name: " + name);
+                        if (email) lines.push("Email: " + email);
+                        if (subject) lines.push("Subject: " + subject);
+
+                        lines.push("Message: " + message);
+                        lines.push('');
+                        lines.push('---');
+                        lines.push('Sent from website');
+
+                        finalMessage = lines.join('\n');
+                    }
+
+                    const text = encodeURIComponent(finalMessage);
+                    const url = `https://wa.me/${phone}?text=${text}`;
+
+                    window.open(url, '_blank');
+
+                    // Close modal after click
+                    const modalEl = document.getElementById('waModal');
+                    const modalInstance = bootstrap.Modal.getInstance(modalEl);
+                    modalInstance.hide();
+                });
+            });
+
+        })();
+    </script>
+</body>
+
+</html>
